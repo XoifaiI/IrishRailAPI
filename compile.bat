@@ -1,10 +1,7 @@
 @echo off
-REM
-REM
 
 echo Irish Rail API | Compilation
 
-REM
 java -version >nul 2>&1
 if %ERRORLEVEL% neq 0 (
     echo ERROR: Java is not installed or not in PATH
@@ -17,7 +14,6 @@ if %ERRORLEVEL% neq 0 (
 echo Checking Java version...
 java -version
 
-REM
 if not exist "bin" (
     echo Creating bin directory...
     mkdir bin

@@ -1,7 +1,4 @@
 @echo off
-REM
-REM
-
 echo Irish Rail API - Starting
 
 java -version >nul 2>&1
@@ -13,7 +10,6 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-REM
 if not exist "bin" (
     echo ERROR: Compiled classes not found!
     echo run compile.bat first to compile the project
@@ -21,7 +17,6 @@ if not exist "bin" (
     exit /b 1
 )
 
-REM
 if not exist "bin\Main.class" (
     echo ERROR: Main.class not found!
     echo run compile.bat first to compile the project
@@ -29,7 +24,6 @@ if not exist "bin\Main.class" (
     exit /b 1
 )
 
-REM
 java -cp bin Main
 
 echo Application Closed
