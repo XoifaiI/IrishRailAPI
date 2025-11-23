@@ -13,23 +13,33 @@ A Java application for tracking Irish Rail trains in real-time using the Irish R
 
 ## Requirements
 
-- Java 21 LTS or higher
-- Internet connection for API access
+- Java 25 LTS or higher (recommended) - [Download here](https://www.oracle.com/java/technologies/downloads/)
 
-## Compilation
+## Quick Start (Windows)
+### Compilation
 
+Run the compile script to build the project:
 ```bash
-javac src/*.java
+compile.bat
 ```
 
-## Running
+This will compile all Java files and place the compiled classes in the `bin` directory.
 
+### Running
+Run the application:
 ```bash
-java -cp src Main
+run.bat
+```
+
+## Manual Compilation (Alternative)
+If you prefer to compile manually:
+```bash
+javac -d bin src/*.java
+java -cp bin Main
 ```
 
 ## Usage
-The code provides an menu with the following options:
+The code gives an menu with the following options:
 1. **Search for stations** - Find stations by partial name match
 2. **Get trains at a station** - View upcoming trains (with time window)
 3. **Get all current trains** - List all trains currently running
@@ -41,8 +51,7 @@ The code provides an menu with the following options:
 
 ## API Source
 
-This application uses the [Irish Rail Real Time API](http://api.irishrail.ie/realtime/).
+This code uses the [Irish Rail Real Time API](http://api.irishrail.ie/realtime/).
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

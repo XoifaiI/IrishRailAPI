@@ -1,0 +1,17 @@
+bin/
+*.class
+
+*.jar
+*.war
+*.ear
+
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+.DS_Store
+Thumbs.db
+
+*.log
